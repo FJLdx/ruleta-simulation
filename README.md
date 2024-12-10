@@ -1,33 +1,50 @@
-Roulette Simulator Project
-Roulette Simulator
-This project simulates and analyzes betting systems in roulette, such as Martingale and the reverse
-Labouchère,
-to demonstrate that the house always wins, regardless of the system used.
-**Created as part of the ethical hacking academy Hack4u by @S4vitar.**
-Features
-- Simulation of Martingale betting system.
-- Simulation of reverse Labouchère betting system.
-- Statistics to analyze outcomes and losses.
-- User-configurable parameters for flexible testing.
-Usage Manual
-### Running the script
-To execute the simulator, run the following command in your terminal:
-```
-bash ruleta.sh
-```
-### Options and Parameters
+# Roulette Simulator
+This project simulates betting systems on roulette, such as Martingale and Inverse Labouchère, to
+demonstrate the inevitability of losses to the house over time.
+## Features
+- Simulates popular betting strategies like Martingale and Inverse Labouchère.
+- Provides statistical analysis of outcomes over multiple rounds.
+- Customizable parameters, including initial budget, bet size, and maximum table limit.
+## How It Works
+1. **Martingale System**: Doubles the bet after every loss to recover previous losses and gain a
+profit equal to the initial bet size.
+2. **Inverse Labouchère System**: Cancels out numbers from a sequence after a win and adds
+them after a loss.
+3. The simulation demonstrates how house rules (like table limits) and probabilities ultimately lead to
+the loss of funds.
+## Requirements
+- Bash shell environment.
+- No additional dependencies required.
 Page 1
-Roulette Simulator Project
-1. **Martingale System**:
-- The script will guide you through initial bet setup.
-- It doubles the bet after each loss and resets after a win.
-2. **Reverse Labouchère System**:
-- The script allows defining a sequence of bets.
-- On win: adds the first and last numbers of the sequence.
-- On loss: removes numbers and recalculates.
-### Example Commands:
-- To start with a specific budget or bet sequence, provide input when prompted by the script.
-- Customize rounds and betting limits interactively.
-Credits
-This project was created as part of the Hack4u academy by @S4vitar.
-Special thanks to the academy for providing the knowledge and support for this project.
+Roulette Simulator - README
+## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/FJLdx/roulette-simulator.git
+```
+2. Navigate to the project directory:
+```bash
+cd roulette-simulator
+```
+3. Make the script executable:
+```bash
+chmod +x ruleta.sh
+```
+## Usage
+Run the script with:
+```bash
+./ruleta.sh
+```
+Customize parameters directly in the script for different simulations.
+Page 2
+Roulette Simulator - README
+## Example Output
+- Starting balance: $1000
+- Bet size: $10
+- System: Martingale
+Result: Loss after 36 rounds due to table limit.
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request for any
+improvements or new features.
+## License
+This project is licensed under the MIT License.
